@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Oncore Beta — Event management built just for DJs</title>
-<meta name="description" content="Oncore is opening a private beta for mobile DJs. Apply for early access to the CRM built just for DJs.">
+<title>Oncore — Event management built just for DJs · Private beta</title>
+<meta name="description" content="Oncore is the CRM built just for mobile DJs: lead capture, pipelines, contracts, online payments, planning links, timelines, music and reviews. Apply for the private beta.">
 <meta property="og:title" content="Join the Oncore beta">
 <meta property="og:description" content="Finally, event management built just for DJs. Apply for early access.">
 <meta property="og:image" content="https://partyoncore.com/logo.png">
@@ -12,46 +12,230 @@
 <meta name="theme-color" content="#0A0E11">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@400;500&amp;display=swap">
 <style>
-body{margin:0;background:#0A0E11}
+body{margin:0;background:#0A0E11;font-family:'Geist',system-ui,sans-serif;color:#E9EEF1;-webkit-font-smoothing:antialiased}
 a{color:#16D0B1;text-decoration:none}a:hover{color:#5BE6CE}
+summary{cursor:pointer;list-style:none}summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .2s}
 input::placeholder,textarea::placeholder{color:#6B7B86}
 input:focus,textarea:focus{outline:none;border-color:#16D0B1 !important;box-shadow:0 0 0 3px rgba(22,208,177,0.18)}
 </style>
-<style>html{scroll-behavior:smooth}[hidden]{display:none !important}button:disabled{opacity:.6;cursor:wait}</style>
+<style>html{scroll-behavior:smooth}section[id]{scroll-margin-top:80px}[hidden]{display:none !important}button:disabled{opacity:.6;cursor:wait}</style>
 </head>
 <body>
-<div style="width: 100%; min-height: 100vh; box-sizing: border-box; background: #0A0E11; color: #E9EEF1; font-family: 'Geist', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column">
+<div style="width: 100%; min-height: 100vh; background: #0A0E11; color: #E9EEF1; font-family: 'Geist', system-ui, sans-serif; overflow-x: hidden">
 
-<svg aria-hidden="true" width="1100" height="1100" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="0.35" stroke-linecap="round" style="position: absolute; top: -240px; left: -320px; opacity: 0.07"><path d="M12 3v8"></path><path d="M6.3 6.8a8 8 0 1 0 11.4 0"></path></svg>
-
-<header style="position: relative; max-width: 1200px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<!-- NAV -->
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(10,14,17,0.88); backdrop-filter: blur(12px); border-bottom: 1px solid #1A2228">
+<nav aria-label="Main" style="max-width: 1200px; margin: 0 auto; padding: 16px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="display: flex; align-items: center; min-height: 44px">
 <img src="logo.png" alt="Oncore" style="height: 32px; width: auto; display: block">
-<a href="#beta-form" style="font-size: 15px; font-weight: 600; color: #E9EEF1; border: 1px solid #2A3741; padding: 12px 18px; border-radius: 10px">Apply for the beta</a>
+</a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-size: 15px">
+<a href="#features" style="color: #B4BFC7">What’s included</a>
+<a href="#planning" style="color: #B4BFC7">Planning</a>
+<a href="#faq" style="color: #B4BFC7">FAQ</a>
+</div>
+<div style="display: flex; align-items: center; gap: 12px">
+<a href="https://app.partyoncore.com" style="color: #E9EEF1; font-size: 15px; font-weight: 500; padding: 12px 14px">Sign in</a>
+<a href="#apply" style="background: #16D0B1; color: #04201B; font-size: 15px; font-weight: 600; padding: 12px 18px; border-radius: 10px">Apply for the beta</a>
+</div>
+</nav>
 </header>
 
-<main style="position: relative; flex-grow: 1; max-width: 1200px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 40px 24px 80px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
-
-<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 28px; padding-top: 24px">
-<p style="margin: 0; align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #C9D3D9; border: 1px solid #26343E; border-radius: 999px; padding: 8px 16px">
+<!-- HERO -->
+<section id="top" style="position: relative; padding: 88px 24px 0">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px">
+<p style="margin: 0; display: inline-flex; align-items: center; gap: 10px; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #C9D3D9; border: 1px solid #23303A; border-radius: 999px; padding: 8px 16px">
 <span style="width: 8px; height: 8px; border-radius: 50%; background: #16D0B1"></span>Private beta · Now accepting DJs
 </p>
-<h1 style="margin: 0; font-size: clamp(40px, 5.4vw, 68px); line-height: 1.02; letter-spacing: -0.045em; font-weight: 700; color: #FFFFFF">Finally, event management <span style="color: #16D0B1">built just for DJs.</span></h1>
-<p style="margin: 0; max-width: 540px; font-size: 19px; line-height: 1.6; color: #A9B6BF">We’re opening Oncore to a small group of mobile DJs before launch. Tell us about your business, and help shape the CRM we’re building for people who do what you do.</p>
-<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; max-width: 540px">
-<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>Leads, contracts, invoices and payments in one place</span></li>
-<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>Client planning portals and drag-and-drop event timelines</span></li>
-<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>Built and tested by a working mobile DJ company</span></li>
-<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>Beta testers get early access and a direct line to the founder</span></li>
+<h1 style="margin: 0; max-width: 940px; font-size: clamp(42px, 6.4vw, 84px); line-height: 1.02; letter-spacing: -0.045em; font-weight: 700; color: #FFFFFF">Finally, event management <span style="color: #16D0B1">built just for DJs.</span></h1>
+<p style="margin: 0; max-width: 660px; font-size: 20px; line-height: 1.55; color: #A9B6BF">From the first inquiry to the last song — leads, contracts, payments, planning and music in one place. Join the beta and help shape it.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px">
+<a href="#apply" style="background: #16D0B1; color: #04201B; font-size: 17px; font-weight: 600; padding: 16px 26px; border-radius: 12px">Apply for the beta</a>
+<a href="#features" style="color: #FFFFFF; font-size: 17px; font-weight: 500; padding: 16px 26px; border-radius: 12px; border: 1px solid #2A3741">See what’s included</a>
+</div>
+<p style="margin: 0; font-size: 14px; color: #8494A0">Built by a working mobile DJ · We never take a cut of your payments</p>
+</div>
+
+<!-- Product mock: Events board -->
+<div style="max-width: 1160px; margin: 64px auto 0; border-radius: 18px 18px 0 0; border: 1px solid #22303A; border-bottom: none; background: #10161B; box-shadow: 0 -30px 120px rgba(22,208,177,0.10); overflow: hidden">
+<div style="display: flex; align-items: center; gap: 8px; padding: 14px 18px; border-bottom: 1px solid #1C262E">
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #2A363F"></span>
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #2A363F"></span>
+<span style="width: 11px; height: 11px; border-radius: 50%; background: #2A363F"></span>
+<span style="margin-left: 14px; font-family: 'Geist Mono', monospace; font-size: 12px; color: #6F808C">app.partyoncore.com/events</span>
+</div>
+<div style="display: flex; flex-wrap: wrap; text-align: left">
+<aside style="flex: 1 1 200px; max-width: 230px; padding: 20px 14px; border-right: 1px solid #1C262E; display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #93A3AE">
+<div style="padding: 10px 12px; border-radius: 8px">Dashboard</div>
+<div style="padding: 10px 12px; border-radius: 8px">Inbox</div>
+<div style="padding: 10px 12px; border-radius: 8px; background: rgba(22,208,177,0.12); color: #16D0B1; font-weight: 600">Events</div>
+<div style="padding: 10px 12px; border-radius: 8px">Calendar</div>
+<div style="padding: 10px 12px; border-radius: 8px">Clients</div>
+<div style="padding: 10px 12px; border-radius: 8px">Payments</div>
+<div style="padding: 10px 12px; border-radius: 8px">Marketing</div>
+<div style="padding: 10px 12px; border-radius: 8px">Settings</div>
+</aside>
+<div style="flex: 999 1 560px; min-width: 0; padding: 22px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px">
+<div style="display: flex; gap: 6px; font-size: 13px">
+<span style="padding: 8px 12px; border-radius: 8px; background: #1A232A; color: #FFFFFF; font-weight: 600">Board</span>
+<span style="padding: 8px 12px; border-radius: 8px; color: #8494A0">List</span>
+</div>
+<span style="font-size: 13px; color: #8494A0">Pipeline: Mobile DJ</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: #C9D3D9"><span>New lead</span><span style="color: #6F808C">4</span></div>
+<div style="background: #161E24; border: 1px solid #222D35; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Rivera Wedding</span><span style="font-size: 12px; color: #8494A0">Jun 13 · Inquiry form</span></div>
+<div style="background: #161E24; border: 1px solid #222D35; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Lincoln HS Prom</span><span style="font-size: 12px; color: #8494A0">Apr 25 · Referral</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: #C9D3D9"><span>Consultation</span><span style="color: #6F808C">2</span></div>
+<div style="background: #161E24; border: 1px solid #222D35; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Okafor + Lee</span><span style="font-size: 12px; color: #8494A0">Call booked · Thu 6:30</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: #C9D3D9"><span>Booked</span><span style="color: #6F808C">7</span></div>
+<div style="background: #161E24; border: 1px solid #222D35; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 8px"><span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Nguyen Wedding</span><span style="font-size: 12px; color: #8494A0">Sep 20 · Deposit paid</span><span style="align-self: flex-start; font-size: 11px; font-weight: 600; color: #16D0B1; background: rgba(22,208,177,0.12); padding: 4px 8px; border-radius: 6px">Contract signed</span></div>
+<div style="background: #161E24; border: 1px solid #222D35; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Martinez Quinceañera</span><span style="font-size: 12px; color: #8494A0">Oct 4 · FCC Scheduled</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; justify-content: space-between; font-size: 13px; font-weight: 600; color: #C9D3D9"><span>Completed</span><span style="color: #6F808C">12</span></div>
+<div style="background: #161E24; border: 1px solid #222D35; border-radius: 10px; padding: 12px; display: flex; flex-direction: column; gap: 6px"><span style="font-size: 14px; font-weight: 600; color: #FFFFFF">Patel Anniversary</span><span style="font-size: 12px; color: #8494A0">Balance paid · Review sent</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- WHAT'S INCLUDED -->
+<section id="features" style="background: #0E1418; border-top: 1px solid #1A2228; padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 760px">
+<p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #16D0B1">What you get in the beta</p>
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; color: #FFFFFF">Everything from inquiry to encore.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #A9B6BF">Beta testers run their real bookings on Oncore with these tools from day one.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px">
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M7 8h10"></path><path d="M7 12h10"></path><path d="M7 16h5"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Lead capture</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Put an inquiry form on your website. New leads land in your pipeline instantly — no copying from email.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="5" height="16" rx="1.5"></rect><rect x="10" y="4" width="5" height="11" rx="1.5"></rect><rect x="17" y="4" width="4" height="7" rx="1.5"></rect></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Pipelines</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Start from the Mobile DJ template or name your own stages. Drag events across a board or work from a list.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5"></path><path d="M9 16c1.5-2 2.5-2 3 0s1.5 1 3-1"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Contracts</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Build your contract once in your own words. Clients sign online, and the booking moves forward on its own.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path><path d="M6 15h4"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Online payments</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Collect deposits and final balances by card through Stripe — connect the account you already have — or Venmo.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"></path><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Planning links</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Every event gets its own planning link. Clients open it — no password — and fill in a short questionnaire you control.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Timeline builder</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Client answers become a draft timeline. Drag moments into place on your final call, then share it or download a PDF.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Music management</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Clients search songs or import their Spotify playlists right into the event, so every must-play is in one place.</p>
+</article>
+
+<article style="background: #10161B; border: 1px solid #1E2830; border-radius: 16px; padding: 28px; display: flex; flex-direction: column; gap: 14px">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg>
+<h3 style="margin: 0; font-size: 20px; font-weight: 600; color: #FFFFFF">Reviews</h3>
+<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #A0AEB8">Sync your Google and WeddingWire reviews and show them off with a widget on your website.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- PLANNING SPOTLIGHT -->
+<section id="planning" style="padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto; background: #10161B; border: 1px solid #1E2830; border-radius: 24px; padding: clamp(28px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+<p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #16D0B1">Client planning</p>
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; color: #FFFFFF">From questionnaire to timeline to playlist.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #A9B6BF">No more Google Forms, hand-built spreadsheets and copy-pasted song lists. One planning link per event, and the answers become your working timeline.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px">
+<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span><strong style="color: #FFFFFF">A light, inclusive questionnaire.</strong> Organized by the moments of the day, with questions that work for every couple.</span></li>
+<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span><strong style="color: #FFFFFF">A drag-and-drop timeline.</strong> Bring it to the final consultation call, adjust live, then share it or download a PDF.</span></li>
+<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span><strong style="color: #FFFFFF">Music, all in one place.</strong> Songs and Spotify playlists your clients add go straight into the event.</span></li>
+</ul>
+</div>
+<div style="flex: 1 1 380px; min-width: 0; background: #FFFFFF; color: #12181C; border-radius: 16px; padding: 28px; box-shadow: 0 24px 60px rgba(0,0,0,0.45); display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; border-bottom: 1px solid #E4E9EC; padding-bottom: 14px">
+<span style="font-size: 18px; font-weight: 700">Nguyen Wedding — Timeline</span>
+<span style="font-size: 13px; color: #5B6A74">Sep 20</span>
+</div>
+<div style="display: grid; grid-template-columns: 76px minmax(0, 1fr); row-gap: 16px; column-gap: 16px; font-size: 14px; line-height: 1.45">
+<span style="font-weight: 700">5:00 PM</span>
+<div style="display: flex; flex-direction: column; border-left: 3px solid #16D0B1; padding-left: 12px"><span style="font-weight: 700">Ceremony</span><span style="color: #46545D">Processional — “Canon in D”</span><span style="color: #46545D">Mic plan: officiant lav, readers handheld</span></div>
+<span style="font-weight: 700">6:15 PM</span>
+<div style="display: flex; flex-direction: column; border-left: 3px solid #F2A541; padding-left: 12px"><span style="font-weight: 700">Grand Entrance</span><span style="color: #46545D">Wedding party — “Crazy in Love”</span><span style="color: #46545D">Pronunciation: Thảo = “Tao”</span></div>
+<span style="font-weight: 700">6:30 PM</span>
+<div style="display: flex; flex-direction: column; border-left: 3px solid #8B7CF6; padding-left: 12px"><span style="font-weight: 700">Couple First Dance</span><span style="color: #46545D">“At Last” — fade at 2:40</span></div>
+<span style="font-weight: 700">6:40 PM</span>
+<div style="display: flex; flex-direction: column; border-left: 3px solid #8B7CF6; padding-left: 12px"><span style="font-weight: 700">Mother Son Dance</span><span style="color: #46545D">“A Song for Mama”</span></div>
+<span style="font-weight: 700">10:45 PM</span>
+<div style="display: flex; flex-direction: column; border-left: 3px solid #16D0B1; padding-left: 12px"><span style="font-weight: 700">Last Song &amp; Send-off</span><span style="color: #46545D">Sparklers — “Don’t Stop Me Now”</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STORY -->
+<section style="background: #0E1418; border-top: 1px solid #1A2228; border-bottom: 1px solid #1A2228; padding: 96px 24px">
+<div style="max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 24px">
+<svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 3v8"></path><path d="M6.3 6.8a8 8 0 1 0 11.4 0"></path></svg>
+<p style="margin: 0; font-size: clamp(24px, 3vw, 34px); line-height: 1.35; letter-spacing: -0.02em; font-weight: 500; color: #FFFFFF">Oncore was built inside PartyON Entertainment, a working mobile DJ company — to replace the patchwork of forms, spreadsheets and apps we were using ourselves. Every feature is tested on real events first.</p>
+<p style="margin: 0; font-size: 15px; color: #8494A0">[Founder name] · Founder, PartyON Entertainment</p>
+</div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" style="padding: 104px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 24px; padding-top: 12px">
+<p style="margin: 0; font-family: 'Geist Mono', monospace; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: #16D0B1">Join the beta</p>
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -0.035em; font-weight: 700; color: #FFFFFF">Help build the CRM DJs actually want.</h2>
+<p style="margin: 0; max-width: 520px; font-size: 18px; line-height: 1.6; color: #A9B6BF">We’re opening Oncore to a small group of mobile DJs before launch. Tell us about your business and we’ll reach out as spots open.</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; max-width: 520px">
+<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>Early access to all eight beta features</span></li>
+<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>A direct line to the founder — your feedback shapes what’s built next</span></li>
+<li style="display: flex; gap: 12px; font-size: 16px; line-height: 1.5; color: #D3DBE0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 1px"><path d="M5 12l5 5 9-10"></path></svg><span>Your payments go straight to you — Oncore never takes a cut</span></li>
 </ul>
 </div>
 
 <div id="beta-form" style="flex: 1 1 420px; min-width: 0; background: #10161B; border: 1px solid #1F2A32; border-radius: 20px; padding: clamp(24px, 4vw, 40px); box-shadow: 0 30px 100px rgba(22,208,177,0.08)">
-
 <form id="beta-signup" novalidate style="position: relative; display: flex; flex-direction: column; gap: 20px">
 <div style="display: flex; flex-direction: column; gap: 6px">
-<h2 style="margin: 0; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; color: #FFFFFF">Apply for the beta</h2>
+<h3 style="margin: 0; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; color: #FFFFFF">Apply for the beta</h3>
 <p style="margin: 0; font-size: 15px; color: #93A3AE">Takes about a minute.</p>
 </div>
 <div style="display: flex; flex-direction: column; gap: 8px">
@@ -81,23 +265,56 @@ input:focus,textarea:focus{outline:none;border-color:#16D0B1 !important;box-shad
 <button type="submit" id="beta-submit" style="font-family: inherit; font-size: 17px; font-weight: 600; color: #04201B; background: #16D0B1; border: none; border-radius: 12px; padding: 16px; min-height: 52px; cursor: pointer">Request beta access</button>
 <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #8494A0; text-align: center">We’ll only use your details to contact you about the Oncore beta.</p>
 </form>
-
 <div id="beta-thanks" role="status" hidden style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; padding: 48px 8px">
 <div style="width: 72px; height: 72px; border-radius: 50%; background: rgba(22,208,177,0.14); display: flex; align-items: center; justify-content: center">
 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#16D0B1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"></path></svg>
 </div>
-<h2 style="margin: 0; font-size: 30px; letter-spacing: -0.02em; font-weight: 700; color: #FFFFFF">You’re on the list.</h2>
+<h3 style="margin: 0; font-size: 30px; letter-spacing: -0.02em; font-weight: 700; color: #FFFFFF">You’re on the list.</h3>
 <p style="margin: 0; max-width: 360px; font-size: 16px; line-height: 1.6; color: #A9B6BF">Thanks for applying. We’ll be in touch by email as beta spots open up.</p>
 <button type="button" id="beta-again" style="font-family: inherit; font-size: 15px; font-weight: 500; color: #B4BFC7; background: transparent; border: 1px solid #2A3741; border-radius: 10px; padding: 12px 18px; min-height: 44px; cursor: pointer">Back to the form</button>
 </div>
+</div>
 
 </div>
-</main>
+</section>
 
-<footer style="position: relative; border-top: 1px solid #1A2228; padding: 28px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: #8494A0">
+<!-- FAQ -->
+<section id="faq" style="padding: 0 24px 104px">
+<div style="max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 32px">
+<h2 style="margin: 0; text-align: center; font-size: clamp(32px, 4vw, 44px); letter-spacing: -0.035em; font-weight: 700; color: #FFFFFF">Questions</h2>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #1E2830">
+<details style="border-bottom: 1px solid #1E2830; padding: 22px 0"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 600; color: #FFFFFF">What does a beta tester do?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16D0B1">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A9B6BF">Use Oncore with your real bookings and tell us what works and what doesn’t. Your feedback goes straight to the founder and shapes what we build next.</p></details>
+<details style="border-bottom: 1px solid #1E2830; padding: 22px 0"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 600; color: #FFFFFF">Do you take a percentage of my payments?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16D0B1">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A9B6BF">No. Client payments go directly to your own Stripe or Venmo account.</p></details>
+<details style="border-bottom: 1px solid #1E2830; padding: 22px 0"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 600; color: #FFFFFF">Can I use the Stripe account I already have?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16D0B1">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A9B6BF">Yes — connect your existing account, or set up a new one during onboarding.</p></details>
+<details style="border-bottom: 1px solid #1E2830; padding: 22px 0"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 600; color: #FFFFFF">I’m switching from another CRM. What happens to my clients?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16D0B1">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A9B6BF">Import them and set each client’s stage as you go, so their workflows pick up right where they left off.</p></details>
+<details style="border-bottom: 1px solid #1E2830; padding: 22px 0"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 600; color: #FFFFFF">Can I change the pipeline stages?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16D0B1">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A9B6BF">Completely. Use one pipeline from inquiry to completed, or separate sales and planning pipelines — named your way.</p></details>
+<details style="border-bottom: 1px solid #1E2830; padding: 22px 0"><summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 18px; font-weight: 600; color: #FFFFFF">Is Oncore only for DJs?<span class="faq-plus" aria-hidden="true" style="font-size: 26px; font-weight: 400; color: #16D0B1">+</span></summary><p style="margin: 14px 0 0; font-size: 16px; line-height: 1.6; color: #A9B6BF">It’s built for mobile DJs first. Planners, photographers, videographers and other event pros are next.</p></details>
+</div>
+</div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="padding: 0 24px 96px">
+<div style="max-width: 1200px; margin: 0 auto; border-radius: 24px; background: #16D0B1; color: #04201B; padding: clamp(36px, 6vw, 80px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px">
+<div style="flex: 1 1 460px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: clamp(32px, 4.2vw, 52px); line-height: 1.05; letter-spacing: -0.04em; font-weight: 700">Less admin. More dance floors.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.5; color: #0B3A32">Beta spots are limited — apply for early access.</p>
+</div>
+<a href="#apply" style="background: #04201B; color: #FFFFFF; font-size: 17px; font-weight: 600; padding: 18px 28px; border-radius: 12px">Apply for the beta</a>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top: 1px solid #1A2228; padding: 40px 24px">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; font-size: 14px; color: #8494A0">
+<img src="logo.png" alt="Oncore" style="height: 26px; width: auto; display: block">
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<a href="#features" style="color: #8494A0">What’s included</a>
+<a href="#apply" style="color: #8494A0">Apply</a>
+<a href="#faq" style="color: #8494A0">FAQ</a>
+<a href="https://app.partyoncore.com" style="color: #8494A0">Sign in</a>
+</div>
 <span>© 2026 Oncore · partyoncore.com</span>
-<a href="https://app.partyoncore.com" style="color: #8494A0">Already a beta tester? Sign in</a>
 </div>
 </footer>
 
